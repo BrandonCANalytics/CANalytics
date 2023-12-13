@@ -96,7 +96,17 @@
 							<h3>PowerBI</h3>
 							<p>A snip of a PowerBI dashboard developed to help an organization harness insights from Net Promoter Score surveys.</p>
 							<ul class="actions special">
-								<li><a href="#" class="button">Full Size</a></li>
+								<li><button id="myBtn">Full Size</button></li>
+								<!-- The Modal -->
+									<div id="myModal" class="modal">
+
+										<!-- Modal content -->
+										<div class="modal-content">
+										<span class="close">&times;</span>
+										<img src="images/NPSsnip.jpg" alt="[Image Caption]" />
+										</div>
+									
+									</div>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
@@ -104,7 +114,18 @@
 							<h3>Power Automate</h3>
 							<p>I built a simple Power Automate Flow to download an external data excel file from an email and then update the PowerBI dashboard that uses it.</p>
 							<ul class="actions special">
-								<li><a href="#" class="button">Full Size</a></li>
+								<li><button id="myBtn">Full Size</button></li>
+								
+								<!-- The Modal -->
+									<div id="myModal" class="modal">
+
+										<!-- Modal content -->
+										<div class="modal-content">
+										<span class="close">&times;</span>
+										<img src="images/automatesnip.jpg" alt="[Image Caption]" />
+										</div>
+  
+  									</div>
 							</ul>
 						</div>
 						<div class="col-4 col-12-medium">
@@ -112,7 +133,7 @@
 							<h3>Excel</h3>
 							<p>In addition to data analyses, I've used Excel to build simple staff scheduling apps like this one.</p>
 							<ul class="actions special">
-								<li><a href="#" class="button">Full Size</a></li>
+								<li><a href="images/excelsnip.jpg" class="button">Full Size</a></li>
 							</ul>
 						</div>
 					</div>
@@ -490,6 +511,32 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				// Get the modal
+				var modal = document.getElementById("myModal");
+				
+				// Get the button that opens the modal
+				var btn = document.getElementById("myBtn");
+				
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+				
+				// When the user clicks the button, open the modal 
+				btn.onclick = function() {
+				  modal.style.display = "block";
+				}
+				
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+				  modal.style.display = "none";
+				}
+				
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				  if (event.target == modal) {
+					modal.style.display = "none";
+				  }
+				}
+				</script>		
 	</body>
 </html>
